@@ -1,0 +1,402 @@
+/*
+Theme Name: Supple
+Theme URI: https://templatejungle.com/
+Author: TemplatesJungle
+Author URI: https://templatesjungle.com/
+Description: Supple – Supplement Landing Page Bootstrap 5 HTML Website Template
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+    
+/*--------------------------------------------------------------
+/** VARIABLES
+--------------------------------------------------------------*/
+:root {
+    --accent-color:             #717171;
+    --white-color:              #fff;
+    --black-color:              #272727;
+    --gray-color:               #F3F3F3;
+    --gray-color-200:           #E3E3E3;
+    --gray-color-300:           #E0E0E0;
+    --gray-color-500:           #D0D0D0;
+    --gray-color-800:           #3A3A3A;
+    --light-gray-color:         #D2D2D2;
+    --primary-color:            #fa0000;
+    --bs-body-color:            #272727;
+    --bs-secondary-color:       #e8fffe;
+    --bs-secondary-rgb:         255, 232, 240;
+    --bs-primary-rgb:           248,109,114;
+    --bs-border-color:          #E3E3E3;
+    --bs-dropdown-link-active-bg: #F5F5F5;
+    --light-color:              #F8F8F8;
+    --light-blue-color:         #EDF1F3;
+    --navbar-color-color:       #131814;
+    --swiper-theme-color:       #4A4A4A;
+    --swiper-pagination-color:  #4A4A4A;
+    --bs-box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+    --swiper-theme-color: #ff0000 !important;
+    --swiper-pagination-color: #ff0000 !important;
+    --bs-link-color: #ff0000;
+    --bs-link-color-rgb: 63, 195, 215;
+    --bs-link-hover-color: #F6F6F6;
+    --bs-link-hover-color-rgb: 246, 246, 246;
+    --bs-primary-text-emphasis: #F6F6F6;
+  
+    --bs-btn-font-size: 1rem;
+    --bs-nav-link-font-size: 16px;
+  }
+  
+  @font-face{
+    font-family: DaysLater;
+    src:url(28_Days_Later.ttf);
+}
+
+.text-red{
+    fill: red;
+}
+
+/*.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+  /* Fonts */
+  :root {
+    --body-font  : "Montserrat", sans-serif;
+    --heading-font  : "syne", sans-serif;
+  }
+  
+  @media (min-width: 1850px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1540px;
+    }
+  }
+
+body, body [data-bs-theme="light"] {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;  
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #ff0000;
+    --bs-secondary: #202121;
+    --bs-success: ;
+    --bs-info: #ff0000;
+    --bs-warning: #F6F6F6;
+    --bs-danger: #202121;
+    --bs-light: #f8f9fa;
+    --bs-dark: #202121;
+    --bs-primary-rgb: 63, 195, 215;
+    --bs-secondary-rgb: 32, 33, 33;
+    --bs-body-color: #C7C7C7;
+    --bs-body-color-rgb: 199, 199, 199;
+    --bs-heading-color: #F6F6F6;
+    --bs-body-bg: #545555;
+    --bs-body-bg-rgb: 84, 85, 85;
+    --bs-border-color: #545555;
+}
+
+:focus-visible {
+    outline: 0px;
+}
+.swiper-pagination-bullet{
+    background-color: var(--bs-gray-200);
+    opacity: 1;
+    width: 17px;
+    height: 17px;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: var(--swiper-pagination-color);
+}
+
+hr{
+    color: #7d7d7d;
+    opacity: 1;
+}
+
+body { 
+    font-family: var(--body-font);
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--bs-body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+    font-family: var(--heading-font);
+    color: var(--bs-heading-color);
+}
+
+h1 {
+    font-size: 84px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 38px;
+    font-weight: 400;
+}
+h4 {
+    font-size: 28px;
+    font-weight: 500;
+}
+h5 {
+    font-size: 28px;
+    font-weight:200;
+}
+
+@media only screen and (max-width: 1500px) {
+    h1{
+      font-size: 40px;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    h2{
+        font-size: 39px;
+    }
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--bs-btn-active-color);
+    font-weight: 300;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ff0000;
+    --bs-btn-hover-border-color: #ff0000;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ff0000;
+    --bs-btn-active-border-color: #ff0000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+    background: var(--bs-primary);
+    box-shadow: 0px 10px 80px 20px rgba(63, 195, 215, 0.4);
+}
+
+.section-padding{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.section-margin{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.form-control {
+    padding: .9rem .75rem;
+    background-color: transparent;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0;
+}
+.form-control:focus {
+    background-color: transparent;
+    border-color: var(--white-color);
+    box-shadow: none;
+}
+.form-control::placeholder {
+    color: var(--bs-body-color);
+}
+
+/* Border */
+.border-light{
+    border: 1px solid #545555 !important;
+}
+
+.swiper-slide.swiper-slide-active.swiper-slide-visible.swiper-slide-fully-visible.swiper-slide-thumb-active img{
+    border: 1px solid var(--primary-color);
+}
+.navbar-nav{
+    --bs-nav-link-color: var(--white-color);
+    --bs-nav-link-hover-color: var(--white-color);
+}
+.navbar{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-width='1.5' d='M20 7H4m16 5H4m16 5H4'/%3E%3C/svg%3E");
+}
+
+.list-group-item{
+    border: none;
+}
+
+/* top */
+#top{
+    z-index: 99999999;
+}
+
+/* Header */
+.nav-link{
+    letter-spacing: 1px;
+}
+.nav-item .nav-link.active{
+    color: var(--bs-primary);
+}
+.tab-section .nav-link {
+    font-family: var(--heading-font);
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+/* Home */
+#home{
+    margin-top: 101px;
+}
+
+
+
+/* Faqs */
+.accordion-item{
+    border: 1px solid var(--bs-body-bg);
+    background: none;
+    border-radius: 0;
+    /*min-height: 500px;*/
+}
+.accordion-item:not(:first-of-type){
+    border: 1px solid var(--bs-body-bg);
+}
+h3 button.accordion-button{
+    font-family: var(--heading-font);
+    background: none;
+    font-size: 1.75rem;
+    line-height: 127%;
+}
+.accordion-button:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    background: none;
+    box-shadow: none;
+}
+
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4em' height='4em' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z'/%3E%3C/svg%3E");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4em' height='4em' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M19 13H5v-2h14z'/%3E%3C/svg%3E");
+    transform: rotate(-180deg);
+}
+
+/* swiper overide */
+.swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+.testimonial-card{
+    background-color: transparent;
+    border: 1px solid #545555;
+    border-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+.testimonial-card:hover{
+    background-color: #202121;
+    border: 1px solid #545555;
+}
+
+/* Video */
+.video-section{
+    min-height: 444px;
+}
+/* overide */
+.modal-dialog {
+    max-width: 800px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.modal-content {
+    padding: 0;
+    background-color: #f5f3ef;
+    border: none;
+    border-radius: 0
+}
+
+.list-group {
+    --bs-list-group-bg: var(--bs-success);
+    --bs-list-group-border-width: var(--bs-border-width);
+
+}
+
+/* Newsletter */
+#newsletter form{
+    border: 1px solid var(--bs-body-color);
+}
+
+/* 5.1 Single Product Page
+/*----------------------------------------------*/
+.thumb-swiper .swiper-slide{
+    height: auto;
+}
+.swiper-slide-thumb-active img{
+    border: var(--bs-border-width) var(--bs-border-style) var(--primary-color) !important;
+}
+.product-info del{
+    color: var(--gray-color-500);
+}
+
+/* Brands */
+#brands img{
+    filter: grayscale(1);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#brands img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* footer */
+#footer .social-links ul li a{
+    color: --bs-gray;
+    transition: 0.3s ease-in-out;
+}
+#footer .social-links ul li a:hover {
+    color: --bs-gray;
+}
+
+.footer{
+    background-color: grey;
+}
